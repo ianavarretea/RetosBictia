@@ -12,20 +12,40 @@
 </head>
 
 <body>
-    <!--Diseño de menu-->
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                <span class="fs-4">Simple header</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="Discografia.html" class="nav-link">Discografia</a></li>
+                <li class="nav-item"><a href="Desarrollo.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="Desarrollo.html" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="Contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!--Diseño de menu con fallos-->
+    <!--
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
           Menu
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><button class="dropdown-item" type="button" formaction="index.html">Inicio</button></li>
-            <li><button class="dropdown-item" type="button" formaction="Discografia.html">Discografia</button></li>
+            <li><a href="index.html" button class="dropdown-item">Inicio</button></li>
+            <li><a href= "Discografia.html" button class="dropdown-item">Discografia</button></li>
             <li>
                 <hr class="dropdown-divider">
             </li>
-            <li><button class="dropdown-item" type="button" formaction="Contacto.html">Contacto</button></li>
+            <li><a href="Contacto.html" class="dropdown-item">Contacto</button></li>
         </ul>
     </div>
+-->
     <h2>hola desa</h2>
     <!--footer-->
     <div class="container">
@@ -35,7 +55,7 @@
                 <li class="nav-item"><a href="Desarrollo.html" class="nav-link px-2 text-muted">Features</a></li>
                 <li class="nav-item"><a href="Desarrollo.html" class="nav-link px-2 text-muted">Pricing</a></li>
                 <li class="nav-item"><a href="Desarrollo.html" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="Desarrollo.html" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="Contacto.html" class="nav-link px-2 text-muted">About</a></li>
             </ul>
             <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
         </footer>
