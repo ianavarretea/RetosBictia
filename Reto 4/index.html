@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <style>
+        .procResultado {
+            display: none;
+        }
+    </style>
+
+    <title>Ejercicio Javascript</title>
+</head>
+
+<body>
+    <main class="container">
+        <h2> Reto 4</h2>
+        <!--Cuerpo de los botones-->
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <Button type="button" class="btn btn primary btn lg" id="btt_calculadora">Calculadora</Button>
+                <Button type="button" class="btn btn primary btn lg" id="btt_contCar">Contar Caracteres</Button>
+                <Button type="button" class="btn btn primary btn lg" id="btt_mayYmin">Mayusculas y Minusculas</Button>
+                <Button type="button" class="btn btn primary btn lg" id="btt_sumNum">Sumatoria de numeros</Button>
+            </div>
+        </div>
+        <br>
+        <!--Campo de resultados-->
+        <div class="resultados">
+            <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                <!--Formulario Calculadora-->
+                <div class="procResultado" id="Calculadora">
+                    <p class="text-center">Calculadora
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="Num1" placeholder="Numero 1" aria-label="Numero 1">
+                            <span class="input-group-text">operación</span>
+                            <input type="text" class="form-control" id="Num2" placeholder="Numero 2" aria-label="Numero 2">
+                        </div>
+                        <!--cuadro combinado de las operaciones-->
+                        <div class="form-floating">
+                            <select class="form-select" id="operaciones" aria-label="Floating label select example">
+                              <option selected>Operaciones</option>
+                              <option value="1">Suma</option>
+                              <option value="2">Resta</option>
+                              <option value="3">Multiplicacion</option>
+                              <option value="4">Division</option>
+                            </select>
+                            <label for="floatingSelect">Selecciona operación a realizar </label>
+                            <button type="button" class="btn btn-dark" id="botonResul">Resultado</button>
+                            <p class="text-center" id="Resul"> Mostrar resultado </p>
+                        </div>
+                    </p>
+                </div>
+                <!--Formulario Contar caracteres-->
+                <div class="procResultado" id="Contar">
+                    <p class="text-center">Contador de caracteres
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="contarPalabras" placeholder="Ingresar Palabra a contar" aria-label="Contar">
+                        </div>
+                        <button type="button" class="btn btn-dark" id="botonContar">Contar</button>
+                        <p class="text-center" id="resCont"> Mostrar resultado </p>
+                    </p>
+                </div>
+                <!--Convertir Mayusculas y minusculas  -->
+                <div class="procResultado" id="mayYmin">
+                    <p class="text-center">Mayusculas
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="conv" placeholder="Ingresar palabra a convertir " aria-label="cambiar">
+                            <button type="button" class="btn btn-dark" id="Convertir">Convertir </button>
+
+                    </p>
+                    <p class="text-center" id="resDato"> Mostrar resultado </p>
+                    </div>
+                </div>
+                <!-- Sumatoria  -->
+                <div class="procResultado" id="sumaNum">
+                    <p class="text-center">Suma num
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="sum" placeholder="Ingresar numero " aria-label="cambiar">
+                            <button type="button" class="btn btn-dark" id="resSum">Resultado</button>
+                    </p>
+                    <p class="text-center" id="resSum"> Mostrar resultado </p>
+                    </div>
+                </div>
+    </main>
+    <!--Direccion para Script y estilos-->
+    <script src="scritp/Script.js"></script>
+</body>
+
+</html>
