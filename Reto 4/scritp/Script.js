@@ -6,16 +6,16 @@ function ocultarRes() {
         document.getElementsByClassName("procResultado")[i].style.display = "none";
     }
 }
-// Funciones logicas boton
+// Funciones logicas para el boton
 
 function calculadora() {
 
-    var operador = document.getElementById(operaciones);
-    var num1 = document.getElementById("Num1");
-    var num2 = document.getElementById("Num2");
-    var resultado = document.getElementById("Resul");
+    var operador = document.getElementById("operaciones").value;
+    var num1 = document.getElementById("Num1").value;
+    var num2 = document.getElementById("Num2").value;
+    var resultado = document.getElementById("Resul").value;
 
-    if (operador == 1) {
+    if (operador == "1") {
         resultado = parseInt(num1) + parseInt(num2);
 
     } else if (operador == '2') {
@@ -30,7 +30,8 @@ function calculadora() {
 
     }
 
-    alert('Gracias')
+    document.getElementById("Resul").innerText = "El resultado es: " + resultado
+
 }
 
 function contarCar() {
@@ -93,7 +94,7 @@ boton_Sumatoria.addEventListener("click", function() {
 
 var botonCalcu = document.getElementById("botonResul");
 botonCalcu = addEventListener("click", function() {
-    // calculadora();
+    calculadora();
 
 })
 var botonContarcarac = document.getElementById("botonContar");
