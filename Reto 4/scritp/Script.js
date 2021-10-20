@@ -88,12 +88,12 @@ boton_Sumatoria.addEventListener("click", function() {
     document.getElementById("sumaNum").style.display = "block";
 
 });
-
+//-------------------------------------------------------------------------
 /*-*-*-*-*operaciones de cada boton *-*-*-*-*-*/
 
 var botonCalcu = document.getElementById("botonResul");
 botonCalcu = addEventListener("click", function() {
-    function Calculadora() {}
+    // calculadora();
 
 })
 var botonContarcarac = document.getElementById("botonContar");
@@ -103,17 +103,18 @@ botonContarcarac = addEventListener("click", function() {
     document.getElementById("resCont").innerText = "La cantidad de caracteres es: " + b;
 })
 
-var botonMay = document.getElementById("botonMayus");
+var botonMay = document.getElementById("Convertir");
 botonMay = addEventListener("click", function() {
+    var c = document.getElementById("conv").value;
+    var d = c.toUpperCase();
+    var e = c.toLowerCase();
+    document.getElementById("resDato").innerText = "La palabra queda convertida asi: " + d + " y " + e;
 
 
 });
-var botonMin = document.getElementById("botonMin");
-botonMin = addEventListener("click", function() {
 
-
-})
-var botonSum = document.getElementById("sum");
+var botonSum = document.getElementById("btmSum");
 botonSum = addEventListener("click", function() {
-
+    var f = document.getElementById("sum").value;
+    Sumatoria();
 })
