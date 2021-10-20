@@ -62,8 +62,7 @@ var boton_calc = document.getElementById("btt_calculadora");
 boton_calc.addEventListener("click", function() {
     ocultarRes();
     document.getElementById("Calculadora").style.display = "block";
-    calculadora(resultado);
-    document.getElementById("Resul").innerText = resultado;
+
 });
 
 /******Campo Contar letras */
@@ -71,8 +70,7 @@ var boton_contar = document.getElementById("btt_contCar");
 boton_contar.addEventListener("click", function() {
     ocultarRes();
     document.getElementById("Contar").style.display = "block";
-    contarCar();
-    document.getElementById("resCont").innerText = cont;
+
 });
 
 /**Campo Convertir Mayusculas y minisculas */
@@ -80,7 +78,7 @@ var boton_MayusyMin = document.getElementById("btt_mayYmin");
 boton_MayusyMin.addEventListener("click", function() {
     ocultarRes();
     document.getElementById("mayYmin").style.display = "block";
-    Mayusymin();
+
 });
 
 /** Campo Sumatoria */
@@ -88,7 +86,7 @@ var boton_Sumatoria = document.getElementById("btt_sumNum");
 boton_Sumatoria.addEventListener("click", function() {
     ocultarRes();
     document.getElementById("sumaNum").style.display = "block";
-    Sumatoria();
+
 });
 
 /*-*-*-*-*operaciones de cada boton *-*-*-*-*-*/
@@ -100,7 +98,9 @@ botonCalcu = addEventListener("click", function() {
 })
 var botonContarcarac = document.getElementById("botonContar");
 botonContarcarac = addEventListener("click", function() {
-
+    var a = document.getElementById("contarPalabras").value;
+    var b = a.length;
+    document.getElementById("resCont").innerText = "La cantidad de caracteres es: " + b;
 })
 
 var botonMay = document.getElementById("botonMayus");
