@@ -6,6 +6,7 @@ function ocultarRes() {
         document.getElementsByClassName("procResultado")[i].style.display = "none";
     }
 }
+
 // Funciones logicas para el boton
 
 function calculadora() {
@@ -61,6 +62,7 @@ function Sumatoria() {
 //*****Campo CALCULADORA */
 var boton_calc = document.getElementById("btt_calculadora");
 boton_calc.addEventListener("click", function() {
+    alert("hola");
     ocultarRes();
     document.getElementById("Calculadora").style.display = "block";
 
